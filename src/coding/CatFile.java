@@ -1,8 +1,6 @@
 package coding;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +13,7 @@ public class CatFile {
 
     public List open_nonu() throws IOException {
         File f = new File("Hello");
+        BufferedReader br = new BufferedReader(new FileReader(f));
         FileReader fileReader = new FileReader(f);
         char[] byt = new char[1000];
         int leng = fileReader.read(byt);
