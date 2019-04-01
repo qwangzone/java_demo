@@ -7,7 +7,7 @@ public class BianMa {
         String a = "abcdef";
         char[] chars = a.toCharArray();
         for (char v:chars){
-            System.out.print(v);
+            System.out.print(v+",");
         }
         byte[] bt1 = a.getBytes("gbk");
         for (byte v:bt1){
