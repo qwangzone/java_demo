@@ -9,6 +9,7 @@ import java.util.Properties;
 public class StaticleiDemo {
     public static Properties pro;
     public static String a = "1";
+    public String ll;
 
     static {
 

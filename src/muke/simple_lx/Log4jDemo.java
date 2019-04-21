@@ -12,7 +12,7 @@ public class Log4jDemo {
         Properties log4j = new Properties();
         InputStream inputStream = ClassLoader.getSystemResourceAsStream("log4j.properties");
         log4j.load(inputStream);
-        //PropertyConfigurator.configure(log4j);
+        PropertyConfigurator.configure(log4j);
         Logger log = Logger.getLogger(Log4jDemo.class);
         log.info("22222233333");
         log.error("ppppppppp");
