@@ -25,15 +25,16 @@ public class HttpClientDemo {
         try {
             //创建uri
             URIBuilder builder = new URIBuilder(url);
-
             URI uri = builder.build();
 
             //创建get请求
             HttpGet httpGet = new HttpGet(uri);
+            httpGet.setHeader("cookie","SID=3dXViBX0r9Ea9Fl2Gxv2GjVvzVpkFMIcFwzg");
             //执行请求
             //背后还是用url封装的
-            //HttpGet httpGet = new HttpGet(url);
-            HttpPost httpPost = new HttpPost();
+//            HttpGet httpGet = new HttpGet(url);
+//            HttpPost httpPost = new HttpPost();
+
             response = httpClient.execute(httpGet);
             System.out.println(EntityUtils.toString(response.getEntity(), "UTF-8"));
 

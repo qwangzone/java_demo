@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test mvn commod" >
+    <test name = "mvn test" >
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name = "SMOKE" />-->
+            <!--</run>-->
+        <!--</groups>-->
+        <!--<packages>-->
+            <!--<package name = "*" />-->
+        <!--</packages>-->
+        <classes>
+            <class name="qa.wq.test.Case"></class>
+        </classes>
+    </test>
+</suite>
