@@ -28,7 +28,6 @@ public class ListCollectionDemo {
         //移出对象
         ls1.remove("1");
         getList(ls1);
-
         //判断当前集合是否为空
         System.out.println(ls1.isEmpty());
         System.out.println("===============");
