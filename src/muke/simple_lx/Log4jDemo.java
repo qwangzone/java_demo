@@ -16,9 +16,14 @@ public class Log4jDemo {
         log4j.load(inputStream);
         PropertyConfigurator.configure(log4j);
         Logger log = Logger.getLogger(Log4jDemo.class);
-        log.info("22222233333");
-        log.error("ppppppppp");
-        log.info("ddddddd");
+        StringBuffer sb = new StringBuffer();
+        sb.append("hello");
+        sb.append("world");
+//        log.info("22222233333");
+//        log.error("ppppppppp");
+//        log.info("ddddddd");
+        log.info("========");
+        log.info(sb);
         //log.info(log4j.getProperty("log4j.appender.CONSOLE"));
 
 

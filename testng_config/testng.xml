@@ -13,4 +13,7 @@
             <class name="qa.wq.test.Case"></class>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="qa.wq.test.RetryListener"></listener>
+    </listeners>
 </suite>

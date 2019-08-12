@@ -17,7 +17,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HttpClientDemo {
+public class HttpClientDemoGet {
     public static void main(String[] args) {
         String url = "http://127.0.0.1:8000";
         CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -25,10 +25,14 @@ public class HttpClientDemo {
         try {
             //创建uri
             URIBuilder builder = new URIBuilder(url);
+            //添加参数
+            builder.addParameter("id","2");
+
             URI uri = builder.build();
 
             //创建get请求
             HttpGet httpGet = new HttpGet(uri);
+            //添加cookie
             httpGet.setHeader("cookie","SID=3dXViBX0r9Ea9Fl2Gxv2GjVvzVpkFMIcFwzg");
             //执行请求
             //背后还是用url封装的

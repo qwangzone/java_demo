@@ -2,6 +2,10 @@ package muke.system_lx;
 
 public class SystemDemo {
     public static void main(String[] args){
+        int a = 3;
+        double b= 4.11;
+        float d = 2.2f;
+        System.out.println(b-a);
         SystemDemo systemDemo = new SystemDemo();
         System.out.println(System.currentTimeMillis());
         System.out.println(System.getenv());
